@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('tasks', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->description()->default(false); 
+            $table->string('description')->default(false); 
             $table->timestamps();
         });
     }
